@@ -1,0 +1,21 @@
+version: 0.2
+
+env:
+  vars:
+    NODE_ENV: production
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands: npm i -g yarn
+  pre_build:
+    commands:
+      - yarn install --loglevel error
+  build:
+    commands:
+      - yarn run build
+  post_build:
+    commands:
+      - yarn run deploy
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION --paths "/*"
