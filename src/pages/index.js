@@ -7,14 +7,15 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <p>
-      Dear friends, this is the website and blog of the YouTube Channel Make
-      Programming Fun Again.
+      Have you ever noticed that the first syllable of the term "functional
+      programming" is "fun"? Coincidence? Well, I don't think so!
     </p>
     <p>
-      The mission of my channel is to make programming fun again by promoting
-      the use of modern, fun-to-use, production-ready technologies, such as
-      Elixir, React, and GraphQL. Leave your Boring Stack&trade; at work and
-      enjoy programming with fun stuff!
+      This is the website and blog of the YouTube Channel Make Programming Fun
+      Again. The mission of my channel is to make programming fun again by
+      promoting the use of modern, fun-to-use, production-ready technologies,
+      such as Elixir, React, and GraphQL. Leave your Boring Stack&trade; at work
+      and enjoy programming with fun stuff!
     </p>
     <p>
       In the following days, I will improve this website and post more
