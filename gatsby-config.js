@@ -34,7 +34,14 @@ module.exports = {
         bucketName: "makeprogramming-fun-static",
       },
     },
-
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        head: true,
+        trackingId: "UA-163812080-1",
+        respectDNT: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
