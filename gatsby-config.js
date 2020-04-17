@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `MakeProgramming.Fun Again!`,
+    title: `MakeProgramming.Fun`,
     description: ``,
     author: `Karol Moroz`,
   },
