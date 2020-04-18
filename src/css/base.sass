@@ -1,12 +1,13 @@
 html
   font-size: 100%
 
-body 
+body
   background: var(--body-bg)
   color: var(--body-fg)
   font-family: $family-body
+  +fluid-type($breakpoint-mobile, $breakpoint-touch, 16px, 20px)
   font-size: 19px
-  line-height: 1.8
+  line-height: 1.6
 
 .container
   max-width: 800px
@@ -16,5 +17,4 @@ body
   @media screen and (max-width: 800px)
     width: 100%
     padding: 20px
-    font-size: 16px
 

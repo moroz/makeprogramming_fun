@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -9,6 +9,7 @@ const Post = ({ data }) => {
   return (
     <Layout>
       <SEO title={front.title} />
+      <Link to="/">Back to homepage</Link>
       <article className="post">
         <h1 className="post__title">{front.title}</h1>
         <div className="post__meta">{front.date}</div>
@@ -27,7 +28,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date
+        date(formatString: "MMMM D, YYYY")
         slug
       }
     }

@@ -1,0 +1,15 @@
+=mobile
+  @media screen and (max-width: #{$breakpoint-mobile})
+    @content
+
+=touch
+  @media screen and (max-width: #{$breakpoint-touch})
+    @content
+
+=gt-mobile
+  @media screen and (min-width: #{$breakpoint-mobile + 1})
+    @content
+
+=gt-touch
+  @media screen and (min-width: #{$breakpoint-touch + 1})
+    @content

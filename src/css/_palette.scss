@@ -37,7 +37,7 @@ $light: (
 );
 
 $dark: (
-  "body-bg": #121212,
+  "body-bg": rgba(19,18,23,0.975),
   "surface-fg": #9aa0a7,
   "surface-bg": #242526,
   "surface-border": #242526,
@@ -46,7 +46,7 @@ $dark: (
   "input-border": #444,
   "input-placeholder": $dark-dimmed-text,
   "main-bg": #181818,
-  "body-fg": transparentize(#fff, 0.4),
+  "body-fg": #d9d7e0,
   "blue": rgb(10, 132, 255),
   "grey": #444,
   "brown": rgb(162, 132, 94),
