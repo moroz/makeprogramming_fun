@@ -49,6 +49,42 @@ module.exports = {
         path: `${__dirname}/src/posts`
       }
     },
-    `gatsby-transformer-remark`
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/
+                    }
+                  }
+                }
+              ],
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false
+              },
+              escapeEntities: {}
+            }
+          }
+        ]
+      }
+    }
   ]
 };
