@@ -18,6 +18,7 @@ const IndexPage = () => {
             frontmatter {
               slug
               title
+              youtube
               date(formatString: "MMMM DD, YYYY")
             }
           }
@@ -37,22 +38,6 @@ const IndexPage = () => {
           );
         })}
       </section>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/MxGQrmqubsI"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/8MCmTiB3g6c"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
     </Layout>
   );
 };

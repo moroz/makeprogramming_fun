@@ -11,8 +11,8 @@ const Post = ({ data }) => {
       <SEO title={front.title} />
       <Link to="/">Back to homepage</Link>
       <article className="post">
+        <div className="post__date">{front.date}</div>
         <h1 className="post__title">{front.title}</h1>
-        <div className="post__meta">{front.date}</div>
         <div
           className="post__body"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -30,6 +30,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM D, YYYY")
         slug
+        youtube
       }
     }
   }
