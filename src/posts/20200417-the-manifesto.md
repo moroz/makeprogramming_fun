@@ -2,6 +2,7 @@
 title: The manifesto
 date: 2020-04-17
 slug: the-manifesto
+description: The Manifesto. Why Programming should be Made Better Again. BTW. "Functional programming" starts with "fun".
 ---
 
 Have you ever noticed that the first syllable in “functional programming” is “fun”?

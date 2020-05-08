@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import YT from "./YT";
 
 const BlogEntry = ({ title, date, slug, excerpt, youtube }) => {
-  const path = `/posts/${slug}`;
+  const path = `/posts/${slug}/`;
   return (
     <div className="blog_feed__entry" key={slug}>
       <p className="blog_feed__entry__meta">

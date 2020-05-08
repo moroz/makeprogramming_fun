@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `MakeProgramming.Fun`,
-    description: `Explore the world of Elixir and React programming with Karol Moroz.`,
-    author: `Karol Moroz`
+    title: `Make Programming Fun Again`,
+    description: `Let's Make Programming Fun Again. Explore the world of Elixir and React programming, and build fun projects with Karol Moroz.`,
+    author: `Karol Moroz`,
+    keywords:
+      "Elixir, Full Stack Elixir, Functional Programming, React, TypeScript, Web Development"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

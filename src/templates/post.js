@@ -9,7 +9,7 @@ const Post = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={front.title} description={excerpt} />
+      <SEO title={front.title} description={front.description || excerpt} />
       <Link to="/">Back to homepage</Link>
       <article className="post">
         <div className="post__date">{front.date}</div>
@@ -36,6 +36,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM D, YYYY")
         slug
         youtube
+        description
       }
     }
   }
