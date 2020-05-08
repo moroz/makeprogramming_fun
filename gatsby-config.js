@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `MakeProgramming.Fun`,
-    description: ``,
+    description: `Explore the world of Elixir and React programming with Karol Moroz.`,
     author: `Karol Moroz`
   },
   plugins: [

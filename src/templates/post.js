@@ -5,11 +5,11 @@ import SEO from "../components/seo";
 import YT from "../components/YT";
 
 const Post = ({ data }) => {
-  const { html, frontmatter: front } = data.markdownRemark;
+  const { html, frontmatter: front, excerpt } = data.markdownRemark;
 
   return (
     <Layout>
-      <SEO title={front.title} />
+      <SEO title={front.title} description={excerpt} />
       <Link to="/">Back to homepage</Link>
       <article className="post">
         <div className="post__date">{front.date}</div>
@@ -30,6 +30,7 @@ export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
