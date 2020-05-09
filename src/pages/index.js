@@ -19,6 +19,7 @@ const IndexPage = () => {
               slug
               title
               youtube
+              tags
               date(formatString: "MMMM DD, YYYY")
             }
           }

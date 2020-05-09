@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
 import YT from "./YT";
+import Tags from "./tags";
 
-const BlogEntry = ({ title, date, slug, excerpt, youtube }) => {
+const BlogEntry = ({ title, date, slug, excerpt, youtube, tags }) => {
   const path = `/posts/${slug}/`;
   return (
     <div className="blog_feed__entry" key={slug}>
@@ -23,6 +24,7 @@ const BlogEntry = ({ title, date, slug, excerpt, youtube }) => {
       <p>
         <Link to={path}>Read article</Link>
       </p>
+      <Tags tags={tags} />
     </div>
   );
 };

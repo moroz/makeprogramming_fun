@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import YT from "../components/YT";
+import Tags from "../components/tags";
 
 const Post = ({ data }) => {
   const { html, frontmatter: front, excerpt } = data.markdownRemark;
@@ -14,6 +15,7 @@ const Post = ({ data }) => {
       <article className="post">
         <div className="post__date">{front.date}</div>
         <h1 className="post__title">{front.title}</h1>
+        <Tags tags={front.tags} />
         {front.youtube ? (
           <YT youtube={front.youtube} title={front.title} />
         ) : null}
