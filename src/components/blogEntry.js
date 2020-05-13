@@ -17,7 +17,7 @@ const BlogEntry = ({ title, date, slug, excerpt, youtube, tags }) => {
         {title}
       </Link>
       {youtube ? (
-        <YT title={title} youtube={youtube} />
+        <YT title={title} youtube={youtube} defer />
       ) : (
         <p className="blog_feed__entry__excerpt">{excerpt}</p>
       )}

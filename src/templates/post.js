@@ -39,6 +39,7 @@ export const pageQuery = graphql`
         slug
         youtube
         description
+        tags
       }
     }
   }

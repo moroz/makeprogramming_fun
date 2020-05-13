@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 
 const Tags = ({ tags }) => {
   if (!tags) return null;
@@ -6,10 +7,11 @@ const Tags = ({ tags }) => {
     <div className="tags">
       <span className="tags__label">Tags:</span>
       {tags.map((tag, index) => {
+        const slug = tag.toLowerCase().replace(/\s/g, "-");
         return (
-          <span className="tags__tag" key={index}>
+          <Link className="tags__tag" key={index} to={`/tags/${slug}`}>
             {tag}
-          </span>
+          </Link>
         );
       })}
     </div>
