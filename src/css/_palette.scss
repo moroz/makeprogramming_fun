@@ -11,7 +11,8 @@ $dark-primary: rgb(10, 132, 255);
 
 $light: (
   "body-bg": #fff,
-  "tag-bg": #eee,
+  "tag-bg": #fafafa,
+  "tag-fg": #00579E,
   "surface-bg": #fff,
   "surface-border": #eee,
   "surface-hover-bg": #fff,
@@ -44,6 +45,7 @@ $dark: (
   "surface-fg": #9aa0a7,
   "surface-bg": #242526,
   "tag-bg": #333,
+  "tag-fg": #fff,
   "surface-border": #242526,
   "surface-hover-bg": #2c2c2c,
   "input-bg": rgb(58, 59, 60),
