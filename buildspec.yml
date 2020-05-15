@@ -8,9 +8,9 @@ phases:
   install:
     runtime-versions:
       nodejs: 12
-    commands: npm i -g yarn
-  pre_build:
     commands:
+      - npm i -g yarn
+      - yarn set version berry
       - yarn install --loglevel error
   build:
     commands:
