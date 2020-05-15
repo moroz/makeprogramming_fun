@@ -10,7 +10,7 @@ phases:
       nodejs: 12
     commands:
       - npm i -g yarn
-      - yarn install --loglevel error
+      - yarn
   build:
     commands:
       - yarn run build
