@@ -21,9 +21,11 @@ const BlogEntry = ({ title, date, slug, excerpt, youtube, tags }) => {
       ) : (
         <p className="blog_feed__entry__excerpt">{excerpt}</p>
       )}
-      <p>
-        <Link to={path}>Read article</Link>
-      </p>
+      {excerpt.trim().length > 1 ? (
+        <p>
+          <Link to={path}>Read article</Link>
+        </p>
+      ) : null}
       <Tags tags={tags} />
     </div>
   );
