@@ -94,14 +94,14 @@ where humans.name = 'Jane Smith';
 
 ```sql
 select * from pets
-inner join humans on humans.id = pets.owner_id
+join humans on humans.id = pets.owner_id
 where humans.name = 'Jane Smith';
 ```
 
 另外，我們可以為資料表取比較簡短的名稱，比如 `humans` 可以縮寫成 `h`，而 `pets` 可寫為 `p`：
 
 ```sql
-select * from pets AS p
-inner join humans h on h.id = p.owner_id
+select * from pets AS p -- AS 可以省略
+join humans AS h on h.id = p.owner_id
 where h.name = 'Jane Smith';
 ```
