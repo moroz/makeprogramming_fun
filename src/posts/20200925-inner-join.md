@@ -79,7 +79,7 @@ values
 要是我們知道 John Doe 的 ID，我們很容易查到他的寵物有哪些：
 
 ```sql
-select * from pets where id = 1;
+select * from pets where owner_id = 1;
 ```
 
 然而，我們可能不知道 Jane Smith 的 ID，反而我們知道她的名字。在這種情況下，我們就是要用 INNER JOIN：
